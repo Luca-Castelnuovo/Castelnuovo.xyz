@@ -1,9 +1,7 @@
 ############
 ## YOURLS
-############
 
-# Configuration
-*config.php
+# Ignore server configuration files
 .htaccess
 *.config
 *.conf
@@ -15,11 +13,24 @@ pages/*
 
 ############
 ## Tests
-############
 
 includes/**/tests/
 build/
 coverage/
 phpunit.xml
+tests/yourls-tests-config.php
 tests/vendor/
 tests/data/auth/config-test-auth-hashed.php
+tests/data/htaccess/test*
+
+############
+## Environnement
+
+# Windows image file caches
+Thumbs.db
+# Folder config file
+Desktop.ini
+# Mac crap
+.DS_Store
+# NetBeans files
+/nbproject/
